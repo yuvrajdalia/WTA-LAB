@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up for Traderect</title>
+        <link type="text/css" rel="stylesheet" href="css/main.css" />
+        <style>
+          .center
+          {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            margin-top: 20px;
+          }
+          .button
+          {
+            margin-right: auto;
+            margin-left: 400px;
+            width: 10%;
+            display: block;
+          }
+
+        </style>
+        <script src="js/signup.js"></script>
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="home.html">Home</a>
+        </div>
+        <h2 style="text-align: center">Sign Up for Traderect</h2>
+        <hr>
+        <div class="center">
+        <label for="email"><b>Name:</b></label>
+        <input type="text"  id="name" placeholder="Enter name" name="name" required>
+        </div>
+        <div class="center">
+        <label for="email"><b>Mobile number:</b></label>
+        <input type="text"  id="mobno" placeholder="Enter Mobile no." name="mobno" required>
+        </div>
+        <div class="center">
+        <label for="email"><b>Email:</b></label>
+        <input type="text"  id="email" placeholder="Enter Email" name="email" required>
+        </div>
+        <div class="center">
+      <label for="psw"><b>Password:</b></label>
+      <input type="password" id="password" placeholder="Enter Password" name="psw" required>
+    </div>
+    <div class="center">
+      <label for="psw-repeat"><b>Repeat Password:</b></label>
+      <input type="password"  id="repeat" placeholder="Repeat Password" name="psw-repeat" required>
+      </div>
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+      <input type="button" value="Sing Up" class ="button" id="submit" onclick="validate()"/>   
+    </body>
+</html>
